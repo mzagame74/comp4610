@@ -113,8 +113,12 @@ main {
 article {
     margin: 20px 6% 10px 6%;
 }
-article > p {
+article p {
     line-height: 1.4em;
+}
+article img {
+    height: auto;
+    max-width: 100%;
 }
 
 footer {

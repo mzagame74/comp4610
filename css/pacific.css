@@ -1,0 +1,117 @@
+/*
+    File: pacific.css
+    GUI Assignment: Style a Site with External CSS
+    Matt Zagame, UMass Lowell Computer Science, Matt_Zagame@student.uml.edu
+    All rights reserved. May be freely copied or excerpted for educational
+    purposes with credit to the author.
+    Updated by MZ on August 17, 2021 at 10:00 PM
+*/
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+/* setup the gradient background and general website theme */
+body {
+	background-color: #00569f;
+	background-image: url("../images/ptrbackground.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* wrapper contains all of the content for the page, this content is
+centered on the page and uses a grid layout */
+#wrapper {
+	margin: auto;
+	width: 80%;
+	min-height: 500px;
+	min-width: 600px;
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	grid-template-rows: 72px 1fr 72px;
+	background-color: #FFFFFF;
+}
+
+/* header contains the title banner for the webpage */
+header {
+	grid-column: 1/ span 2;
+	background-color: #000033;
+	background-image: url("../images/sunset.jpg");
+	background-repeat: no-repeat;
+	background-position: right;
+	color: white;
+}
+
+/* navigation sidebar which has a fixed width of 200px */
+nav {
+	width: 200px;
+	height: 100%;
+	grid-row: 2/4;
+	background-color: #3399CC;
+}
+nav ul {
+	padding: 5px 25px;
+	list-style: none;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+nav a {
+	color:#000033;
+	text-decoration: none;
+}
+nav a:visited {
+	color: #344873;
+}
+nav a:hover {
+	color: #FFFFFF;
+}
+
+/* main content for the webpage, the size of this content varies with the size
+of the viewport */
+#content {
+	margin: 0px;
+	padding: 0px 25px;
+	grid-row: 2;
+}
+#content > img {
+	margin: 0px 30px 15px 0px;
+	float: left;
+	width: auto;
+}
+#content > p, #content > ul {
+	list-style-image: url("../images/marker.gif");
+}
+span {
+	color: #3399CC;
+	font-weight: bold;
+}
+h1 {
+	margin-top: 10px;
+	margin-bottom: 0px;
+	padding: 10px;
+}
+h2 {
+	color: #3399CC;
+}
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+#contact {
+	font-size: 90%;
+}
+dt {
+	color: #000033;
+}
+
+/* copyright info at the bottom of the content wrapper */
+footer {
+	margin: 15px;
+	grid-column: 2;
+	grid-row: 3;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: small;
+	font-style: italic;
+}
