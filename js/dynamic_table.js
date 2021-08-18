@@ -82,7 +82,7 @@ function checkValues() {
         maxXVal > 50 || isNaN(maxXVal) || minYVal < -50 || minYVal > 50 ||
         isNaN(minYVal) || maxYVal < -50 || maxYVal > 50 || isNaN(maxYVal)) {
         infoMsg.textContent = "One or more values is not within range of -50 to"
-        + " 50";
+        + " 50 ";
         return false;
     }
     else {
