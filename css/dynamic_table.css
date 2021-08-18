@@ -6,11 +6,6 @@
     purposes with credit to the author.
     Updated by MZ on August 17, 2021 at 11:00 PM
 */
-/* main content block */
-#content {
-    padding: 15px;
-}
-
 /* user input form */
 fieldset {
     margin: 0px 10px 10px 10px;
@@ -40,10 +35,9 @@ fieldset #info {
 
 /* dynamic multiplication table */
 #table {
-    margin: 10px;
-    width: 100%;
-    max-width: 940px;
-    max-height: 1200px;
+    max-width: 1200px;
+    max-height: 500px;
+    overflow: scroll;
     box-sizing: border-box;
 }
 @media only screen and (max-width: 767px) {
@@ -53,7 +47,6 @@ fieldset #info {
 }
 table {
     padding: 5px;
-    width: 100%;
     background-color: white;
     border: 2px solid black;
     text-align: right;
@@ -69,4 +62,7 @@ table td {
     padding: 0px 10px;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
+}
+table td:nth-child(2n+1) {
+    background-color: lightgrey;
 }
