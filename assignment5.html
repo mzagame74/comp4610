@@ -1,0 +1,77 @@
+<!--
+    File: assignment5.html
+    GUI Assignment: Implementing a Bit of Scrabble with Drag-and-Drop
+    Matt Zagame, UMass Lowell Computer Science, Matt_Zagame@student.uml.edu
+    All rights reserved. May be freely copied or excerpted for educational
+    purposes with credit to the author.
+    Updated by MZ on August 19, 2021 at 5:30 PM
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GUI Programming I" />
+    <meta name="author" content="Matt Zagame" />
+    <title>Scrabble</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link href="css/scrabble.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>GUI Programming I</h1>
+        </header>
+
+        <!-- navigation bar -->
+        <nav>
+            <a href="index.html">About</a>
+            <div class="dropdown">
+                <button class="dropbtn">Assignments</button>
+                <div class="dropdown-content">
+                    <a href="assignment1.html">Assignment 1</a>
+                    <a href="assignment2.html">Assignment 2</a>
+                    <a href="assignment3.html">Assignment 3</a>
+                    <a href="assignment4.html">Assignment 4</a>
+                    <a href="assignment5.html">Assignment 5</a>
+                </div>
+            </div>
+        </nav>
+        <div class="line"></div>
+        <main>
+            <article>
+                <h2>Scrabble (Work In Progress)</h2>
+                <h3>Implementing a Bit of Scrabble with Drag-and-Drop</h3>
+            </article>
+            <div id="scoreboard">
+                <!-- contains information about the player's score -->
+                <span id="word">Word: </span>
+                <span id="score">Score: </span>
+                <span id="remainingTiles">Remaining Tiles: </span>
+                <span id="highestScore">Highest Score: </span>
+            </div>
+            <!-- scrabble board is inserted here by javascript -->
+            <div id="board"></div>
+            <!-- tiles are added to the rack by javascript -->
+            <div id="rack" class="droppable"></div>
+            <!-- game interaction buttons go here -->
+            <div id="buttonBox">
+                <input type="button" id="nextWord" value="Next Word" />
+                <input type="button" id="reset" value="Start Over" />
+            </div>
+        </main>
+        <footer>
+            <span>Copyright &copy 2021 Matt Zagame</span>
+        </footer>
+
+        <!-- scripts -->
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="js/scrabble.js"></script>
+    </div>
+</body>
+
+</html>
