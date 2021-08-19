@@ -4,7 +4,7 @@
     Matt Zagame, UMass Lowell Computer Science, Matt_Zagame@student.uml.edu
     All rights reserved. May be freely copied or excerpted for educational
     purposes with credit to the author.
-    Updated by MZ on August 16, 2021 at 10:40 PM
+    Updated by MZ on August 19, 2021 at 4:00 PM
     Color Scheme:
     Grain: #D7CEC7,
     Blackboard: #565656, 
@@ -82,7 +82,7 @@ nav a:hover {
     background-color: rgb(250, 250, 250);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
-    z-index: 1;
+    z-index: 3;
 }
 .dropdown-content a {
     padding: 3px 16px;
