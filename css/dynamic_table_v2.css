@@ -1,10 +1,10 @@
 /*
-    File: dynamic_table.css
-    GUI Assignment: Creating an Interactive Dynamic Table
+    File: dynamic_table_v2.css
+    GUI Assignment: Using the jQuery Plugin/UI with Your Dynamic Table
     Matt Zagame, UMass Lowell Computer Science, Matt_Zagame@student.uml.edu
     All rights reserved. May be freely copied or excerpted for educational
     purposes with credit to the author.
-    Updated by MZ on August 17, 2021 at 11:00 PM
+    Updated by MZ on August 19, 2021 at 4:00 PM
 */
 main {
     margin: 15px 10px;
@@ -17,36 +17,38 @@ fieldset {
     width: 300px;
     float: left;
     font-size: small;
+    text-align: right;
     box-sizing: border-box;
 }
-fieldset > form {
-    text-align: right;
+fieldset p {
+    margin: 10px 0px;
 }
 fieldset label, fieldset input {
-    margin: 1px;
     padding: 5px;
-    width: 30%;
 }
-fieldset input[type="button"] {
-    margin: 5px 25%;
+fieldset input[type="submit"] {
+    margin: 5px 25% 0px 25%;
     width: 50%;
 }
 fieldset #info {
     margin: 5px;
+    max-width: 300px;
     text-align: center;
     font-weight: bold;
 }
 
 /* dynamic multiplication table */
-#table {
+#dynamicTable {
+    margin: 10px;
     max-width: 1200px;
     max-height: 500px;
     overflow: scroll;
     box-sizing: border-box;
 }
 @media only screen and (max-width: 767px) {
-    #table {
+    #dynamicTable {
         clear: both;
+        min-width: 100%;
     }
 }
 table {
@@ -69,4 +71,14 @@ table td {
 }
 table td:nth-child(2n+1) {
     background-color: lightgrey;
+}
+
+/* error messages */
+.error {
+    color: red;
+}
+
+/* saved tables */
+#savedTables {
+    clear: both;
 }

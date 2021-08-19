@@ -4,12 +4,13 @@
     Matt Zagame, UMass Lowell Computer Science, Matt_Zagame@student.uml.edu
     All rights reserved. May be freely copied or excerpted for educational
     purposes with credit to the author.
-    Updated by MZ on August 19, 2021 at 4:00 PM
     Color Scheme:
     Grain: #D7CEC7,
     Blackboard: #565656, 
     Oxblood: #76323F,
-    Tan: #C09F80
+    Tan: #C09F80.
+    Website background image courtesy of: https://www.netclipart.com/isee/iRwoRxb_background-image-for-tech-website/
+    Updated by MZ on August 19, 2021 at 5:30 PM
 */
 body {
     margin: 0px;
@@ -21,8 +22,6 @@ body {
     color: #565656;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
-    overflow: auto;
-    box-sizing: border-box;
 }
 
 /* setup grid layout for header, nav, main, and footer */
@@ -49,6 +48,7 @@ nav {
     overflow: hidden;
 }
 nav a {
+    padding-right: 15px;
     float: left;
     color: #76323F;
     font-size: large;
@@ -65,7 +65,8 @@ nav a:hover {
 }
 .dropdown .dropbtn {
     margin: 0px;
-    padding: 0px 16px;
+    padding: 0px;
+    padding-right: 15px;
     border: none;
     outline: none;
     color: #76323F;
@@ -107,7 +108,8 @@ div.line {
 /* main content block */
 main {
     margin: 0px;
-    padding: 5px;
+    padding: 0px;
+    overflow: hidden;
 }
 
 article {
