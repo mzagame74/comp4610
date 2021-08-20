@@ -10,7 +10,7 @@
     Oxblood: #76323F,
     Tan: #C09F80.
     Website background image courtesy of: https://www.netclipart.com/isee/iRwoRxb_background-image-for-tech-website/
-    Updated by MZ on August 19, 2021 at 5:30 PM
+    Updated by MZ on August 19, 2021 at 6:35 PM
 */
 body {
     margin: 0px;
@@ -22,6 +22,15 @@ body {
     color: #565656;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
+}
+
+a {
+    color: #76323F;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
 
 /* setup grid layout for header, nav, main, and footer */
@@ -114,6 +123,7 @@ main {
 
 article {
     margin: 20px 6% 10px 6%;
+    overflow: hidden;
 }
 article p {
     line-height: 1.4em;
