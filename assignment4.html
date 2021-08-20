@@ -4,7 +4,7 @@
     Matt Zagame, UMass Lowell Computer Science, Matt_Zagame@student.uml.edu
     All rights reserved. May be freely copied or excerpted for educational
     purposes with credit to the author.
-    Updated by MZ on August 19, 2021 at 5:20 PM
+    Updated by MZ on August 19, 2021 at 6:30 PM
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -47,55 +47,58 @@
 
         <!-- main container for webpage content -->
         <main>
-            <!-- get user input to generate the multiplication table -->
-            <fieldset>
-                <legend>Please enter table ranges [-50 to 50]</legend>
-                <form id="generateForm">
-                    <p>
-                        <label for="minXVal">Starting column value:</label>
-                        <input type="number" id="minX" value="1" min="-50"
-                            max="50" required />
-                    <div id="minXSlider" class="slider"></div>
-                    </p>
-                    <p>
-                        <label for="maxXVal">Ending column value:</label>
-                        <input type="number" id="maxX" value="10" min="-50"
-                            max="50" required />
-                    <div id="maxXSlider" class="slider"></div>
-                    </p>
-                    <p>
-                        <label for="minYVal">Starting row value:</label>
-                        <input type="number" id="minY" value="1" min="-50"
-                            max="50" required />
-                    <div id="minYSlider" class="slider"></div>
-                    </p>
-                    <p>
-                        <label for="maxYVal">Ending row value:</label>
-                        <input type="number" id="maxY" value="10" min="-50"
-                            max="50" required />
-                    <div id="maxYSlider" class="slider"></div>
-                    </p>
-                    <p>
-                        <input type="submit" id="saveButton" class="ui-button"
-                            value="Save Table" />
-                    </p>
-                    <div id="info"></div>
-                </form>
-            </fieldset>
-            <div id="dynamicTable">
-                <!-- table is generated here -->
-            </div>
-            <div id="savedTables">
-                <!-- saved tables are stored in tabs here -->
-                <ul>
-                </ul>
-            </div>
-            <div>
-                <input type="button" id="removeTab" class="ui-button"
-                    value="Remove Tab" />
-                <input type="button" id="resetButton" class="ui-button"
-                    value="Reset All Saved Tables" />
-            </div>
+            <article>
+                <h2>Multiplication Table Generator v2</h2>
+                <!-- get user input to generate the multiplication table -->
+                <fieldset>
+                    <legend>Please enter table ranges [-50 to 50]</legend>
+                    <form id="generateForm">
+                        <p>
+                            <label for="minXVal">Starting column value:</label>
+                            <input type="number" id="minX" value="1" min="-50"
+                                max="50" required />
+                        <div id="minXSlider" class="slider"></div>
+                        </p>
+                        <p>
+                            <label for="maxXVal">Ending column value:</label>
+                            <input type="number" id="maxX" value="10" min="-50"
+                                max="50" required />
+                        <div id="maxXSlider" class="slider"></div>
+                        </p>
+                        <p>
+                            <label for="minYVal">Starting row value:</label>
+                            <input type="number" id="minY" value="1" min="-50"
+                                max="50" required />
+                        <div id="minYSlider" class="slider"></div>
+                        </p>
+                        <p>
+                            <label for="maxYVal">Ending row value:</label>
+                            <input type="number" id="maxY" value="10" min="-50"
+                                max="50" required />
+                        <div id="maxYSlider" class="slider"></div>
+                        </p>
+                        <p>
+                            <input type="submit" id="saveButton"
+                                class="ui-button" value="Save Table" />
+                        </p>
+                        <div id="info"></div>
+                    </form>
+                </fieldset>
+                <div id="dynamicTable">
+                    <!-- table is generated here -->
+                </div>
+                <div id="savedTables">
+                    <!-- saved tables are stored in tabs here -->
+                    <ul>
+                    </ul>
+                </div>
+                <div>
+                    <input type="button" id="removeTab" class="ui-button"
+                        value="Remove Tab" />
+                    <input type="button" id="resetButton" class="ui-button"
+                        value="Reset All Saved Tables" />
+                </div>
+            </article>
         </main>
 
         <!-- copyright info -->
